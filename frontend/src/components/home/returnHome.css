@@ -1,0 +1,210 @@
+/* General container styling */
+.container-shopping {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Card Styles */
+.cardGenarateRp {
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.cardSection {
+  background-color: #fff;
+}
+
+.cardItems {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);  /* Floating shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 250px;  /* Smaller card width */
+  overflow: hidden;
+}
+
+.cardItems:hover {
+  transform: translateY(-10px);  /* Float the card on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);  /* Enhance shadow on hover */
+}
+
+.card-title {
+  font-size: 1.1rem;  /* Slightly smaller title */
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 0.9rem;  /* Smaller text */
+  color: #666;
+  text-align: center;
+}
+
+.card .text-center {
+  font-size: 1.5rem;  /* Smaller number display */
+  color: #000;
+}
+
+/* Buttons */
+.cardBtn {
+  align-items: center;
+}
+/* Centering button container */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  gap: 10px; /* Space between buttons */
+  margin-top: 15px; /* Add some space above the buttons */
+}
+
+.add-to-cart-btn {
+  background-color: #000000; /* Green background */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  
+}
+
+.add-to-cart-btn:hover {
+  background-color: #202020; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.view-btn {
+  background-color: #000000; /* Blue background */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  
+}
+
+.view-btn:hover {
+  background-color: #282828; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Center search box */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; /* Full viewport height to center vertically */
+}
+
+.search-box {
+  width: 50%;
+  max-width: 600px; /* Maximum width for the search input */
+}
+
+/* Search input */
+input[type="text"].form-control {
+  border-radius: 20px;
+  border: 1px solid #ced4da;
+  padding: 15px;  /* Adjust padding for a bigger input field */
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+input[type="text"].form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+.addNewClothes {
+  background-color: #1c8d73;
+  border-color: #0e773b;
+  color: #fff;
+  font-size: 0.8rem;  /* Smaller buttons */
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.addNewClothes:hover {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.newClothes {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Modal styles */
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  background-color: #007bff;
+  color: white;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.modal-header .close {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.modal-body .form-control {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+/* Footer for the cards */
+.card-footer {
+  background-color: white;
+  border-top: none;
+  padding: 10px;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .row {
+      flex-direction: column;
+  }
+
+  .col-md-4, .col-md-6 {
+      margin-bottom: 20px;
+  }
+}
+
+/* Smaller card grid */
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.col-md-4, .col-md-6 {
+  flex-basis: calc(33.333% - 20px);  /* Make the cards smaller */
+  margin: 10px;
+}
+
+@media (max-width: 992px) {
+  .col-md-4 {
+      flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-4, .col-md-6 {
+      flex-basis: 100%;
+  }
+}
